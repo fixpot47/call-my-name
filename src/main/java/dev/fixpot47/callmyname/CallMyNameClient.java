@@ -17,8 +17,8 @@ public final class CallMyNameClient implements ClientModInitializer {
                 return;
             }
 
-            String username = client.player.getGameProfile().getName();
-            String senderName = sender.getName();
+            String username = client.player.getGameProfile().name();
+            String senderName = sender.name();
 
             if (username == null || username.isBlank()) {
                 return;
